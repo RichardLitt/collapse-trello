@@ -1,0 +1,16 @@
+{
+  "name": "Collapse Trello",
+  "version": "1.0",
+  "manifest_version": 2,
+  // "background": "background.html",
+  "permissions": [
+    "tabs", "https://trello.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["trello.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
